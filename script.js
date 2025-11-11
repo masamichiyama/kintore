@@ -4,10 +4,10 @@ document.getElementById('workoutForm').addEventListener('submit', function(e) {
   // メッセージエリアをクリア
   document.getElementById('response').innerText = '';
   
+  var type = document.querySelector('input[name="type"]:checked').value;
   var date = document.getElementById('date').value;
   var weight = document.getElementById('weight').value;
   var reps = document.getElementById('reps').value;
-  var type = document.querySelector('input[name="type"]:checked').value;
   
   var formData = new FormData();
   formData.append('type', type);
